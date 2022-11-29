@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<style>
+		body{
+			margin: 0;
+			padding: 0;
+			display: block;
+			justify-content:center;
+			background-color: grey;
+			align-items: center;
+			text-align: center;	
+		}
+		body div{
+		}
+		div p{
+			padding-top: 50px;
+		}
+		#sector1{
+			background-color: red;
+			position: absolute;
+			width: 2000px;
+			height: 300px;
+			font-size: 100px;
+			color: #000;
+			top: 500px;
+			left:35%;
+			border-radius: 30px;
+		}
+		#sector2{
+			background-color: red;
+			position: absolute;
+			width: 2000px;
+			height: 300px;
+			font-size: 100px;
+			top: 1000px;
+			left: 35%;
+			color: #000;
+			border-radius: 30px;
+		}
+
+		#sector3{
+			background-color:red;
+			position: absolute;
+			width: 2000px;
+			top: 1500px;
+			font-size: 100px;
+			left: 35%;
+			height: 300px;
+			color: #000;
+			border-radius: 30px;
+		}
+		img{
+			position: absolute;
+			width: 200vh;
+			height: 120vh;
+			opacity: 0;
+			left: 0;
+			top: 0;
+		}
+		.ass p{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			left: 0;
+			top: 200px;
+			font-size: 400px;
+			color: red;
+		}
+		#img2{
+			position: absolute;
+			width: 200vh;
+			height: 120vh;
+			opacity: 0;
+			left: 0;
+			top: 0;
+		}
+		#img3{
+			position: absolute;
+			width: 200vh;
+			height: 120vh;
+			opacity: 0;
+			left: 0;
+			top: 0;
+		}
+		.as p{
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+			left: 0;
+			top: 200px;
+			font-size: 400px;
+			color: red;
+		}
+		@media(max-width:500px){
+			#img,#img2,#img3{
+				height: 120vh;
+				width: 100vh;
+			}
+		}
+		#but{
+			position: absolute;
+			transition: all 0s linear 0s;
+			height: 200px;
+			width: 800px;
+			font-size: 150px;
+			top: 2000px;
+		}
+		#but1{
+			position: absolute;
+			transition: all 0s linear 0s;
+			height: 200px;
+			width: 800px;
+			left: 2200px;
+			font-size: 150px;
+			top: 2000px;
+		}
+		#butik{
+			height: 300px;
+			padding: 50px;
+			position: relative;
+			opacity: 0;
+		}
+		#js{
+			font-size: 300px;
+			margin: 0;
+		}
+		#js1{
+			font-size: 300px;
+			margin: 0;
+			opacity: 0;
+		}
+	</style>
+</head>
+<body>
+	<p id="js">153+76=?</p>
+	<p id="js1">Вам понравился тест?</p>
+	<div class="ass">
+		<img src="imgs/negr.jpg"id="img">
+		<img src="imgs/nenegr.jpg" id="img3">
+		<p id="p">Маладэц</p>
+	</div>
+	<div class="as">
+		<img src="imgs/nigga.jpg"id="img2">
+		<p id="p2">НЕ Маладэц</p>
+	</div>
+	<div id="1">
+		<div id="sector1">
+			<p>219</p>
+		</div>
+		<div id="sector2">
+			<p>210</p>
+		</div>
+		<div id="sector3">
+			<p>229</p>
+		</div>
+	</div>
+	<div class="butik" id="butik">
+		<div class="butt">
+			<input type="button" value="Нет" id="but">
+			<input type="submit" value="Да" id="but1">
+		</div>
+	</div>
+</body>
+	<script>
+		//111111111111111111111111111111111111111111111111111111111
+		$( "#sector3" ).click(function() {
+  		$( "#img" ).animate({
+   		 opacity:"1"
+  		},
+  		 1000, function() {
+  	});	
+  		$( "#img" ).animate({
+   		 opacity:"0"
+  		},
+  		 1000, function() {
+  	});	
+});
+
+		$( "#sector3" ).click(function() {
+  		$( "#1" ).animate({
+   		 opacity:"0"
+  		},
+  		 1000, function() {
+  	});		
+});
+		$( "#sector3" ).click(function() {
+  		$( "#p" ).animate({
+   		 opacity:"1"
+  		},
+  		 1000, function() {
+  	});	
+  		$( "#p" ).animate({
+   		 opacity:"0"
+  		},
+  		 1000, function() {
+  	});
+  		$( "#butik" ).animate({
+   		 opacity:"1"
+  		},
+  		 1000, function() {
+  	});	
+  		$( "#js" ).animate({
+   		 opacity:"0"
+  		},
+  		 1000, function() {
+  	});	
+  		$( "#js1" ).animate({
+   		 opacity:"1"
+  		},
+  		 1000, function() {
+  	});	
+});
+		//222222222222222222222222222222222222222222222222222222
+		$( "#sector2" ).click(function() {
+  		$( "#img2" ).animate({
+   		 opacity:"1"
+  		},
+  		 1000, function() {
+  	});	
+  		$( "#img2" ).animate({
+   		 opacity:"0"
+  		},
+  		 1000, function() {
+  	});	
+});
+
+		$( "#sector2" ).click(function() {
+  		$( "#1" ).animate({
+   		 opacity:"0"
+  		},
+  		 1000, function() {
+  	});		
+});
+		$( "#sector2" ).click(function() {
+  		$( "#p2" ).animate({
+   		 opacity:"1"
+  		},
+  		 1000, function() {
+  	});	
+  		$( "#p2" ).animate({
+   		 opacity:"0"
+  		},
+  		 1000, function() {
+  	});
+  		$( "#butik" ).animate({
+   		 opacity:"1"
+  		},
+  		 1000, function() {
+  	});	
+  		$( "#js" ).animate({
+   		 opacity:"0"
+  		},
+  		 1000, function() {
+  	});	
+  		$( "#js1" ).animate({
+   		 opacity:"1"
+  		},
+  		 1000, function() {
+  	});	
+});
+		//333333333333333333333333333333333333333333333333333333333333333
+		$( "#sector1" ).click(function() {
+  		$( "#img2" ).animate({
+   		 opacity:"1"
+  		},
+  		 1000, function() {
+  	});	
+  		$( "#img2" ).animate({
+   		 opacity:"0"
+  		},
+  		 1000, function() {
+  	});	
+});
+
+		$( "#sector1" ).click(function() {
+  		$( "#1" ).animate({
+   		 opacity:"0"
+  		},
+  		 1000, function() {
+  	});		
+});
+		$( "#sector1" ).click(function() {
+  		$( "#p2" ).animate({
+   		 opacity:"1"
+  		},
+  		 1000, function() {
+  	});	
+  		$( "#p2" ).animate({
+   		 opacity:"0"
+  		},
+  		 1000, function() {
+  	});
+  		$( "#butik" ).animate({
+   		 opacity:"1"
+  		},
+  		 1000, function() {
+  	});	
+  		$( "#js" ).animate({
+   		 opacity:"0"
+  		},
+  		 1000, function() {
+  	});	
+  		$( "#js1" ).animate({
+   		 opacity:"1"
+  		},
+  		 1000, function() {
+  	});	
+});
+		function getRandomInt(min, max){
+			return Math.floor(Math.random()* (max-min+1))+min;
+		}
+		$("#but").hover(function(){
+			$(this).css({
+				top:getRandomInt(0,1200)+"px",
+				left:getRandomInt(0,1200)+"px"
+			});
+		},function(){ });
+
+		$( "#but1" ).click(function() {
+  		$( "#img3" ).animate({
+   		 opacity:"1"
+  		},
+  		 1000, function() {
+  	});	
+  		$( "#but" ).animate({
+   		 opacity:"0"
+  		},
+  		 1000, function() {
+  	});	
+  		$( "#but1" ).animate({
+   		 opacity:"0"
+  		},
+  		 1000, function() {
+  	});	
+});
+</script>
+</html>
